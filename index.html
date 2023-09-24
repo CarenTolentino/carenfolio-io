@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caren's Folio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="circles.css">
+    <link rel="icon" href="Logo.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script src="sticky.js"></script>
+</head>
+<body>
+    <div>
+        <ul class='circles'>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+         </ul>
+    </div>
+
+    <nav id="desktop-nav">
+        <div class = "logo" > <img src="LOGO2.png" alt="logo"></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#favorites">Favorites</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class = "logo" > <img src="LOGO2.png" alt="logo"></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#favorites" onclick="toggleMenu()">favorites</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="CAREN.png" alt="CAREN">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">CAREN TOLENTINO</h1>
+        <p class="section__text__p2">Chief Operation Officer</p>
+        <p class="section__text__p1">OF</p>
+        <img src="cybernex.png" alt="" class="Clogo">
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./TolentinoCaren_StudentResume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./Facebook.png"
+            alt="My Facebook profile"
+            class="icon"
+            onclick="location.href='https://www.facebook.com/ImAweeSome/'"
+          />
+          <img
+            src="./Instagram.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/carenityyy_3/'"
+          />
+          <img
+            src="./github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/CarenTolentino'"
+          />
+
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="About_Caren.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="about_exp.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experiences</h3>
+              <p> Student Leadership <br> English Tutor <br>Hosting</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="about_edu.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p> Bachelor of Science in Computer Science <br>Undergraduate Student</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                Hey there! I'm a student who's also on a journey as a perfume seller, an enthusiastic ESL teacher, and a coffee aficionado. 
+                I find joy in preparing meals and perfecting iced coffees, all while dreaming of my very own coffee haven,
+                where students, workers, and dreamers like me can gather for a warm, welcoming sip of inspiration.
+                Can you change scrumptious meals
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="about_arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+        <div class="experience-details-container experience">
+            <div class="about-containers">
+                <div class="details-container">
+                      <h2 class="experience-sub-title">Student Leadership</h2>
+                      <div class="article-container">
+                          <article>
+                              <img
+                              src="check.png"
+                              alt="Experience icon"
+                              class="icon"
+                              />
+                              <div>
+                                  <h3>Leadership Skills</h3>
+                                  <p>Intermediate</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img
+                              src="check.png"
+                              alt="Experience icon"
+                              class="icon"
+                              />
+                              <div>
+                                  <h3>Public Speaking</h3>
+                                  <p>Basic</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img
+                              src="check.png"
+                              alt="Experience icon"
+                              class="icon"
+                              />
+                              <div>
+                                  <h3>Organizational Skills</h3>
+                                  <p>Intermediate</p>
+                              </div>
+                          </article>
+                      </div>
+                  </div>
+                  <div class="details-container card">
+                      <h2 class="experience-sub-title">English Tutor  </h2>
+                      <div class="article-container">
+                          <article>
+                              <img
+                              src="check.png"
+                              alt="Experience icon"
+                              class="icon"
+                              />
+                              <div>
+                                  <h3>Teaching Skills</h3>
+                                  <p>Basic</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img
+                              src="check.png"
+                              alt="Experience icon"
+                              class="icon"
+                              />
+                              <div>
+                                  <h3>Patience & Empathy</h3>
+                                  <p>Intermediate</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img
+                              src="check.png"
+                              alt="Experience icon"
+                              class="icon"
+                              />
+                              <div>
+                                  <h3>Teaching Style Adaptability</h3>
+                                  <p>Intermediate</p>
+                              </div>
+                          </article>
+                      </div>
+                  </div>
+                  <div class="details-container card">
+                      <h2 class="experience-sub-title">Programming</h2>
+                      <div class="article-container">
+                          <article>
+                              <img
+                              src="check.png"
+                              alt="Experience icon"
+                              class="icon"
+                              />
+                              <div>
+                                  <h3>C++</h3>
+                                  <p>Intermediate</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img
+                              src="check.png"
+                              alt="Experience icon"
+                              class="icon"
+                              />
+                              <div>
+                                  <h3>Python</h3>
+                                  <p>Intermediate</p>
+                              </div>
+                          </article>
+                          <article>
+                            <img
+                            src="check.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Javascript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                          <img
+                          src="check.png"
+                          alt="Experience icon"
+                          class="icon"
+                          />
+                          <div>
+                              <h3>HTML</h3>
+                              <p>Intermediate</p>
+                          </div>
+                      </article>
+                      <article>
+                        <img
+                        src="check.png"
+                        alt="Experience icon"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                      </div>
+                  </div>
+                  <div class="details-container card">
+                    <h2 class="experience-sub-title">Hosting</h2>
+                    <div class="article-container">
+                        <article>
+                            <img
+                            src="check.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Script Writing</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                            src="check.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Hospitality</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                            src="check.png"
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Creativity</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+              </div>
+        </div>
+      <img
+        src="about_arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#favorites'"
+      />
+    </section>
+    <section id="favorites">
+      <div class="fave">
+        <p class="section__text__p1">Take a look at my</p>
+        <h1 class="title">Favorites</h1>
+      </div>  
+      <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                        src="Fav_country.jpg"
+                        alt="fave-cuntry"
+                        class="favorites-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title favorites-title">COUNTRY</h2>
+                <div class="btn-container">
+                    <button
+                        class="btn btn-color-2 favorites-btn"
+                        onclick="location.href='https://tinyurl.com/fav-paris'"
+                    >
+                    PARIS
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                        src="Fav_movie.jpg"
+                        alt="fave-movie"
+                        class="favorites-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title favorites-title">MOVIE</h2>
+                <div class="btn-container">
+                    <button
+                        class="btn btn-color-2 favorites-btn"
+                        onclick="location.href='https://tinyurl.com/fav-Nicmovie'"
+                    >
+                    A Walk To Remember
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                        src="fav_song.png"
+                        alt="fave-song"
+                        class="favorites-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title favorites-title">SONG</h2>
+                <div class="btn-container">
+                    <button
+                        class="btn btn-color-2 favorites-btn"
+                        onclick="location.href='https://tinyurl.com/favesong-loveralbum'"
+                    >
+                    Lover Album
+                    </button>
+                </div>
+            </div>
+        </div>
+      </div>
+      <img
+        src="about_arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1 contact-me">Get in Touch</p>
+      <h1 class="title contact-me">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="Contact-Email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:21-00883@g.batstate-u.edu.ph">21-00883@g.batstate-u.edu.ph</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="Linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <p>MADE BY <p style="font-weight: bold; ">CAREN L. TOLENTINO</p></p>
+    </footer>
+
+  </body>
+</html>
